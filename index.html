@@ -2,36 +2,56 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>Document</title>
-
-    <link rel="stylesheet" href="main.css" />
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UserLog</title>
+    <link rel="stylesheet" href="./styleCars.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Changa:wght@300;400;700&display=swap" rel="stylesheet">
 </head>
 
 <body>
-    <h1>PLEASE DON'T FORGET TO SIGN IN</h1>
-        
-    <div id="formUsers">
-        <div class="userData">
-            <label for="userName">Name</label>
-            <input type="text" placeholder="Sign in your name">
-        </div>
-        <div class="userData">
-            <label for="userLastName">Last Name</label>
-            <input type="text" placeholder="Sign in your Last Name">
-        </div>
-        <div class="userData">
-            <label for="userAge">Age</label>
-            <input type="text" placeholder="Sign in your Age">
-        </div>
-        <div class="userData">
-            <label for="userLastName">E-mail</label>
-            <input type="text" placeholder="Sign in your E-mail">
-        </div>
+    <div class="Title">
+        <h1>PLEASE SIGN IN DATE TO CAR</h1>
+        <p>Don't forget your password</p>
     </div>
-
+    <div class="container">
+        <form action="carLog" id="carLog">
+            <div class="carRegister" id="carRegister">
+                <div class="containerLog">
+                    <div class="userName">
+                        <label for="Name">Please type car name</label>
+                        <!--falta incluir el id -->
+                        <input type="name" placeholder="Insert your first name" id="carName">
+                    </div>
+                    <div class="Model">
+                        <label for="model">Please type model car</label>
+                        <input type="word" placeholder="Insert model car" id="Model">
+                    </div>
+                    <div class="doors">
+                        <label for="doorsCar">Please type doors units</label>
+                        <input type="word" placeholder="Insert cant doors" id="Doors">
+                    </div>
+                    <div class="color">
+                        <label for="colorCar">Please type color car</label>
+                        <input type="word" placeholder="Insert color" id="Color">
+                    </div>
+                    <div class="brand">
+                        <label for="brandCar">Please type brand car</label>
+                        <input type="word" placeholder="Insert brand" id="Brand">
+                    </div>
+                </div>
+            </div>
+            <div class="buttons-insert">
+                <button type="submit" class="submitUserBtm" id="subUs">
+                    Save new car
+                </button>
+            </div>
+        </form>
+        <div class="carList" id="carList"></div>
+    </div>
+    <script src="cars.js"></script>
 </body>
 
 </html>

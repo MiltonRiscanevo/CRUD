@@ -1,0 +1,97 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Changa', sans-serif;
+}
+
+.Title {
+    background-image: linear-gradient(to top, #505285 0%, #585e92 12%, #65689f 25%, #7474b0 37%, #7e7ebb 50%, #8389c7 62%, #9795d4 75%, #a2a1dc 87%, #b5aee4 100%);
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    border-end-end-radius: 50px;
+    border-end-start-radius: 50px;
+}
+
+.container {
+    background-image: linear-gradient(15deg, #13547a 0%, #80d0c7 100%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-start-end-radius: 50px;
+    border-start-start-radius: 50px;
+}
+
+.containerLog {
+    justify-content: space-evenly;
+}
+
+.userName,
+.Model,
+.doors,
+.color,
+.brand {
+    display: flex;
+    margin: 10px;
+    padding: 10px;
+    flex-direction: column;
+    font-size: 20px;
+}
+
+input {
+    border-style: double;
+    border-radius: 5px;
+    align-items: center;
+
+}
+
+.carList{
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-evenly;
+    width: 100%;
+    height: 100%;
+    background-image: linear-gradient(to right, #92fe9d 0%, #00c9ff 100%);
+}
+.btn-edit{
+    display: flex;
+    flex-direction: column;
+}
+
+/* button to edit and delete*/
+.update{
+    width: 70px;
+    border-radius: 5px;
+    margin: 10px 10px 5px 5px;
+    border-style: dotted;
+}
+
+/*space to carlist*/
+.carItem{
+    width: 50%;
+    margin: 10px;
+    padding: 10px;
+    justify-content: center;
+    align-items: center;
+    isolation: isolate;
+}
+
+.newItem{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50%;
+}
+
+h4{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: white;
+    margin: 10px 10px 5px 5px;
+    border-radius: 5px;
+    border-width: 10px;
+    background-image: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+}
